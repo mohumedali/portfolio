@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    background-color: #44174e;
+}
+.main-sec p, .main-sec h2, .main-sec h3{
+    color: white;
+}
+.main-sec a{
+    text-decoration: none;
+    margin-left: 15px;
+}
+nav{
+    background-color: black;
+    box-shadow: 1px 1px 5px black;
+}
+.main-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    color:black;
+    text-align: center;
+}
+.main-sec .main-img{
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background-image: url(medddo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+    border: 3px solid white;
+}
+.main-sec .icons button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    transition: 0.4s ease-in-out;
+    margin: 10px 0;
+}
+.main-sec .icons button:hover{
+    transform: scale(1.2);
+}
+.main-sec .buttons button{
+    background-color: black;
+    padding: 5px 15px;
+    border: none;
+    transition: 0.4s ease-in-out;
+    border-radius: 10px;
+    color: white;
+}
+.main-sec .buttons button:hover{
+    transform: scale(1.1);
+    letter-spacing: 1PX;
+}
