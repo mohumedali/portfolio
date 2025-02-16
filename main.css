@@ -5,6 +5,8 @@
 }
 .body{
     background-color: #44174e;
+    height: 2000px;
+    scroll-behavior: smooth;
 }
 .main-sec p, .main-sec h2, .main-sec h3{
     color: white;
@@ -14,49 +16,82 @@
     margin-left: 15px;
 }
 nav{
-    background-color: black;
     box-shadow: 1px 1px 5px black;
+}
+
+nav li a:hover{
+    transform: scale(1.1);
+    color: #eee;
+}
+nav .navbar-brand::first-letter{
+    color: #9606b6;
+    font-weight: bold;
 }
 .main-sec{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
     color:black;
     text-align: center;
+    height: 100vh;
 }
-.main-sec .main-img{
+.main-img{
     width: 280px;
     height: 280px;
     border-radius: 50%;
     background-image: url(medddo.jpg);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
     margin-bottom: 10px;
+    background-repeat: no-repeat;
     border: 3px solid white;
 }
-.main-sec .icons button{
-    width: 30px;
-    height: 30px;
+.main-sec .icons a{
     border-radius: 50%;
     border: none;
     transition: 0.4s ease-in-out;
-    margin: 10px 0;
+    margin: 10px 5px;
+    text-align: center;
 }
-.main-sec .icons button:hover{
+.main-sec .icons a:hover{
     transform: scale(1.2);
 }
-.main-sec .buttons button{
-    background-color: black;
-    padding: 5px 15px;
-    border: none;
+.main-sec .buttons a{
     transition: 0.4s ease-in-out;
-    border-radius: 10px;
     color: white;
 }
-.main-sec .buttons button:hover{
+.main-sec .buttons a:hover{
     transform: scale(1.1);
-    letter-spacing: 1PX;
+}
+.box.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.box{
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+.about-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.skills li span{
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+}
+.skills li{
+    color: white;
+}
+.skills .btn{
+    transition: 0.4s ease-in-out;
+    color: white;
+    font-size: 18px;
+}
+.skills .btn:hover{
+    transform: scale(1.2);
 }
