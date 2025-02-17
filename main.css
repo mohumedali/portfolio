@@ -7,6 +7,13 @@
     background-color: #44174e;
     height: 2000px;
     scroll-behavior: smooth;
+    position: relative;
+}
+.arrow{
+    position: fixed;
+    bottom: 10px;
+    right: 20px;;
+    opacity: 0;
 }
 .main-sec p, .main-sec h2, .main-sec h3{
     color: white;
@@ -17,6 +24,8 @@
 }
 nav{
     box-shadow: 1px 1px 5px black;
+    position: sticky;
+    top: 0;
 }
 
 nav li a:hover{
@@ -73,6 +82,9 @@ nav .navbar-brand::first-letter{
     transform: translateY(60px);
     transition: opacity 1.2s ease-out, transform 1.2s ease-out;
 }
+.about-sec{
+    height: 100vh;
+}
 .about-content{
     display: flex;
     justify-content: space-evenly;
@@ -81,7 +93,7 @@ nav .navbar-brand::first-letter{
 }
 .skills li span{
     font-weight: bold;
-    color: black;
+    color: white;
     font-size: 18px;
 }
 .skills li{
@@ -93,5 +105,8 @@ nav .navbar-brand::first-letter{
     font-size: 18px;
 }
 .skills .btn:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
+}
+.skills .flip-card{
+    display: none;
 }
