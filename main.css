@@ -22,7 +22,7 @@
     width: 20ch;
     text-wrap: nowrap;
     overflow: hidden;
-    animation: typing 2s steps(20) infinite alternate-reverse;
+    animation: typing 2s steps(20) 1 alternate;
 }
 @keyframes typing{
     from{
@@ -35,10 +35,13 @@
 }
 nav{
     box-shadow: 1px 1px 5px black;
+}
+.navbar-pos{
     position: sticky;
     top: 0;
+    z-index: 1;
+    
 }
-
 nav li a:hover{
     transform: scale(1.1);
     color: #eee;
@@ -108,7 +111,7 @@ nav .navbar-brand::first-letter{
     font-size: 18px;
 }
 .skills li{
-    color: rgb(133, 133, 133);
+    color: rgb(186, 186, 186);
     font-weight: 700;
 }
 .skills .btn{
@@ -121,4 +124,32 @@ nav .navbar-brand::first-letter{
 }
 .skills .flip-card{
     display: none;
+}
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.projects .ecomm-pro {
+    width: 300px;
+    height: 350px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+    color: white;
+    padding: 10px;
+}
+.projects .ecomm-pro p{
+    color: rgb(186, 186, 186);
+}
+.projects .ecomm-pro:hover{
+    transform: scale(1.1);
+}
+.projects .ecomm-pro img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    margin-bottom: 15px;
 }

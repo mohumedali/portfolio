@@ -1,0 +1,406 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h4{
+    color: black;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding: 5px;
+    background-color: #Eee;
+    position: sticky;
+    top: 0;
+    box-shadow: 1px 1px 5px gray;
+    z-index: 1;
+}
+nav li{
+    list-style: none;
+    margin-top: 10px;
+}
+nav li a{
+    text-decoration: none;
+    color: black;
+    margin-right: 15px;
+    transition: 0.4s ease;
+    position: relative;
+}
+nav li a.active,
+nav li a:hover
+{
+    color: rgba(0, 143, 131, 0.858);
+}
+nav li a:hover::after,
+nav li a.active::after
+{
+    content: "";
+    background-color: rgba(0, 143, 131, 0.858);
+    width: 40%;
+    height: 2px;
+    bottom: -3px;
+    left: 0px;
+    position: absolute;
+}
+.main-sec{
+    background-image: url(hero4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+}
+.main-pg{
+    position: absolute;
+    top: 30%;
+    left: 200px;
+}
+.main-pg .btn-shopnow{
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: #eeeeee00;
+    background-image: url(button.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-top: 10px;
+}
+.snd-sec{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.snd-sec div{
+    box-shadow: 1px 1px 3px grey;
+    height: 150px;
+    width: 150px;
+}
+.snd-sec div p{
+    text-align: center;
+    margin-top: 5px;
+    color: black;
+    width: 120px;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+.one p{
+    background-color: rgba(95, 224, 217, 0.231);
+}
+.two p{
+    background-color: rgba(255, 167, 167, 0.212);
+}
+.three p{
+    background-color: rgba(148, 255, 182, 0.224);
+}
+.four p{
+    background-color: rgba(95, 224, 217, 0.413);
+}
+.five p{
+    background-color: rgba(105, 40, 255, 0.132);
+}
+.six p{
+    background-color: rgba(255, 182, 153, 0.231);
+}
+.third-sec{
+    text-align: center;
+    margin-top: 70px;
+    letter-spacing: 2px;
+}
+.pro1{
+    width: 250px;
+    height: 350px;
+    box-shadow: 1px 1px 3px gray;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+    position: relative;
+    transition: 0.4s ease;
+    margin-top: 50px;
+}
+.pro1 img{
+    width: 225px;
+    height: 190px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.cart{
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    width: 50px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: rgb(0, 174, 160);
+    color: black;
+}
+.pro1 p,.pro1 h5{
+    text-align: left;
+    margin-left: 10px;
+    line-height: 15px;
+}
+.star{
+    text-align: left;
+    margin-left: 10px;
+    color: goldenrod;
+}
+.pro1 .price{
+    text-align: left;
+    font-size: 20px;
+    color: rgba(0, 143, 131, 0.858);
+    margin-left: 10px;
+    line-height: 25px;
+}
+.pro1:hover{
+    width: 260px;
+    height: 360px;
+}
+.products{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.banner-sec{
+    width: 100%;
+    height: 400px;
+    background-image: url(b2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner-sec h1 , .banner-sec h4{
+    color: white;
+}
+.banner-sec .btn-Explore{
+    border-radius: 5px;
+    background-color:white;
+    padding: 10PX 25PX;
+    border: none;
+    margin-top: 10px;
+}
+.banner-sec span{
+    color: brown;
+}
+.ads-banner ,
+.ads-banner2
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+.ads-banner div,
+.ads-banner2 div
+{
+width: 645px;
+height: 400px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding-left: 15px;
+color: white;
+}
+.ads-banner .banner1{
+    background-image: url(b17.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ads-banner .banner2{
+    background-image: url(b10.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btn-learn,
+.btn-collection
+{
+    background-color: transparent;
+    border: 1px solid #Eee;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    width: 150px;
+    margin-top: 10px;
+}
+.btn-collection{
+    background-color: rgba(0, 109, 0, 0.767);
+}
+.ads-banner2 div{
+    width: 400px;
+    height: 250px;
+}
+.banner3{
+    background-image: url(b7.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner4{
+    background-image: url(b4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner5{
+    background-image: url(b18.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner-sec2{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(0, 0, 69);
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.banner-sec2 p{
+    color: gray;
+}
+.banner-sec2 h1{
+    color: white;
+}
+.banner-sec2 span{
+    color: goldenrod;
+}
+.banner-sec2 .email-input{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.banner-sec2 input{
+    width: 300px;
+    height: 50px;
+    padding: 0 10px;
+}
+.banner-sec2 button{
+    height: 50px;
+    padding: 0 15px;
+    background-color: rgb(36, 120, 36);
+    color: #Eee;
+    border: none;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.part1{
+    line-height: 40px;
+}
+.part1 span{
+    font-weight: bold;
+}
+.part1 h4{
+    margin-top: 10px;
+}
+.part1 a{
+    color: black;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.part1 img{
+    margin-top: 50px;
+}
+.part2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 40px;
+}
+.part2 a{
+    text-decoration: none;
+    color: grey;
+}
+.part4{
+    line-height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.part4 img{
+    border: 1px solid rgba(0, 0, 0, 0.352);
+}
+.part4 > div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.rights{
+    text-align: center;
+    margin-top: 100px;
+    letter-spacing: 3px;
+
+    color: black;
+    height: 75px;
+}
+.rights a{
+    text-decoration: none;
+}
+@media (max-width: 450px){
+    .main-pg{
+        top: 15%;
+        left: 120px;
+        font-size: 14px;
+    }
+    .main-sec {
+    background-size: cover;
+    background-position: right;
+    }
+    .banner-sec2 {
+    height: 250px;
+        flex-direction: column;
+    }
+    .banner-sec{
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    }
+    .banner1{
+        background-position: left;
+        background-size: contain;
+        margin-bottom: 10px;
+    }
+    .banner3,.banner4{
+        margin-bottom: 10px;
+    }
+    .btn-signup{
+        margin-top: 5px;
+    }
+    .part1 , .part2 {
+        margin-bottom: 50px;
+    }
+    .part1{
+        margin-left: 90px;
+    }
+    .three,.four{
+        margin: 10px 0;
+    }
+    /* navbar edit */
+}

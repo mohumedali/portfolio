@@ -34,3 +34,7 @@ btn_read.onclick=function(){
     tech.style.display='none'
     soft.style.display='block'
 }
+let btnEcom=document.getElementById('btn-ecomm');
+btnEcom.onclick=function(){
+    window.location.href='Home.html';
+}
