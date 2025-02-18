@@ -18,6 +18,17 @@
 .main-sec p, .main-sec h2, .main-sec h3{
     color: white;
 }
+.main-sec h3{
+    width: 20ch;
+    text-wrap: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(20) infinite alternate-reverse;
+}
+@keyframes typing{
+    from{
+        width: 0ch;
+    }
+}
 .main-sec a{
     text-decoration: none;
     margin-left: 15px;
@@ -97,7 +108,8 @@ nav .navbar-brand::first-letter{
     font-size: 18px;
 }
 .skills li{
-    color: white;
+    color: rgb(133, 133, 133);
+    font-weight: 700;
 }
 .skills .btn{
     transition: 0.4s ease-in-out;
