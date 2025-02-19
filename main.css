@@ -103,7 +103,7 @@ nav .navbar-brand::first-letter{
 }
 .box-left{
     opacity: 0;
-    transform: translatex(-120px);
+    transform: translatex(-50px);
     transition: opacity 1.2s ease-out, transform 1.2s ease-out;
 }
 .box-right.show {
@@ -112,7 +112,7 @@ nav .navbar-brand::first-letter{
 }
 .box-right{
     opacity: 0;
-    transform: translatex(120px);
+    transform: translatex(50px);
     transition: opacity 1.2s ease-out, transform 1.2s ease-out;
 }
 .about-content{
