@@ -103,7 +103,7 @@ nav .navbar-brand::first-letter{
 }
 .box-left{
     opacity: 0;
-    transform: translatex(-50px);
+    transform: translatex(-30px);
     transition: opacity 1.2s ease-out, transform 1.2s ease-out;
 }
 .box-right.show {
@@ -112,8 +112,20 @@ nav .navbar-brand::first-letter{
 }
 .box-right{
     opacity: 0;
-    transform: translatex(50px);
+    transform: translatex(30px);
     transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+.box-top.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.box-top{
+    opacity: 0;
+    transform: translateY(-35px);
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+.about-sec{
+    margin-top: 20px;
 }
 .about-content{
     display: flex;
@@ -153,6 +165,7 @@ nav .navbar-brand::first-letter{
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center; 
+    margin-top: 20px;
 }
 .projects a{
     text-decoration: none;
@@ -173,6 +186,7 @@ nav .navbar-brand::first-letter{
     flex-direction: column;
     align-items: center;
     padding: 10px;
+    margin-bottom: 10px;
 }
 .projects .ecomm-pro p{
     color: rgb(186, 186, 186);
@@ -191,3 +205,10 @@ nav .navbar-brand::first-letter{
     margin-bottom: 10px;
 
 }
+.contact{
+    margin-top: 20px;
+}
+.btn-send{
+    width: 250px;
+}
+

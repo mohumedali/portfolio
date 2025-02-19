@@ -28,6 +28,16 @@ const observerrr = new IntersectionObserver(entries => {
 }, { threshold: 0.3 });
 boxRight.forEach(box => observer.observe(box));
 
+const boxTop = document.querySelectorAll('.box-top');
+const observerrrr = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
+    });
+}, { threshold: 0.3 });
+boxTop.forEach(box => observer.observe(box));
+
 let arrow=document.getElementById('arrow');
 window.onscroll=function(){
     if(scrollY >= 400)
