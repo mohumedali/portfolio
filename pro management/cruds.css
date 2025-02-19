@@ -99,12 +99,20 @@ table{
     width: 80%;
     text-align: center;
     margin: 10px 0;
+    overflow-x: auto;
+    min-width: 500px;
 }
 table th{
     text-transform: uppercase;
 }
 td,th{
     padding: 5px;
+}
+@media (max-width: 700px) {
+    th, td {
+        padding: 3px;
+        font-size: 14px;
+    }
 }
 #update,#delete{
     padding: 15px;
@@ -136,4 +144,9 @@ td,th{
 #deleteall button:hover{
     background-color:rgb(86, 13, 138);
     letter-spacing: 1px;
+}
+@media (max-width:1000px) {
+    input{
+        margin-bottom: 5px;
+    }
 }

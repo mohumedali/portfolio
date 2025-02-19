@@ -6,8 +6,27 @@ const observer = new IntersectionObserver(entries => {
         }
     });
 }, { threshold: 0.3 });
-
 boxes.forEach(box => observer.observe(box));
+
+const boxLeft = document.querySelectorAll('.box-left');
+const observerr = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
+    });
+}, { threshold: 0.3 });
+boxLeft.forEach(box => observer.observe(box));
+
+const boxRight = document.querySelectorAll('.box-right');
+const observerrr = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
+    });
+}, { threshold: 0.3 });
+boxRight.forEach(box => observer.observe(box));
 
 let arrow=document.getElementById('arrow');
 window.onscroll=function(){
