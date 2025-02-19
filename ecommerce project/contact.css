@@ -295,8 +295,6 @@ footer{
     .map iframe{
         width: 100%;
     }
-
-
 }
 @media (max-width: 1111px)
 {
@@ -307,12 +305,8 @@ footer{
         margin-right: 20px;
     }
 }
-@media (max-width: 799px)
-{
-    nav{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
+@media (max-width: 450px) {
+    a {
+        font-size: 16px;
     }
 }

@@ -28,32 +28,40 @@
         </nav>
   </div>
     <div class="btn btn-dark arrow" id="arrow"><i class="bi bi-arrow-up"></i></div>
-    <div class="main-sec container box" id="main">
-        <div class="main-img"></div>
-        <h2>Mohamed Ali</h2>
+    <div class="main-sec container" id="main">
+        <div class="main-img box"></div>
+        <h2 class="box">Mohamed Ali</h2>
         <h3>Front-End Developer</h3>
         <div class="icons">
-            <a target="_blank" href="https://www.linkedin.com/in/mohammed-ali-537422306/" class="btn btn-dark">
-                <i class="bi bi-linkedin"></i>
-            </a>
-            <a target="_blank" href="https://github.com/mohumedali" class="btn btn-dark">
-            <i class="bi bi-github"></i>
-            </a>
-            <a target="_blank" href="https://www.facebook.com/profile.php?id=100006014641025&mibextid=ZbWKwL" class="btn btn-dark">
-            <i class="bi bi-facebook"></i>
-            </a>
-            <a target="_blank" href="https://www.instagram.com/medoalii00?igsh=MTN1NTVnMmVlM2dnMg==" class="btn btn-dark">
-            <i class="bi bi-instagram"></i>
-            </a>
+            <div class="box-left">
+                <a target="_blank" href="https://www.linkedin.com/in/mohammed-ali-537422306/" class="btn btn-dark">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+            </div>
+            <div class="box-left">
+                <a target="_blank" href="https://github.com/mohumedali" class="btn btn-dark">
+                    <i class="bi bi-github"></i>
+                </a>
+            </div>
+            <div class="box-right">
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=100006014641025&mibextid=ZbWKwL" class="btn btn-dark">
+                    <i class="bi bi-facebook"></i>
+                </a>
+            </div>
+            <div class="box-right">
+                <a target="_blank" href="https://www.instagram.com/medoalii00?igsh=MTN1NTVnMmVlM2dnMg==" class="btn btn-dark">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </div>
         </div>
-        <p>I am a Computer Science student in Benha University, 
+        <p class="box">I am a Computer Science student in Benha University, 
             having some samples of front-end development projects. 
             Skilled in programming languages like Python, Java, C++, javascript and tools like Git. 
             I have worked on projects ranging ecommerce website, portfolio website and google website.
             I am passionate about teamwork, innovation, and always eager to enhance my technical skills in front-end development.</p>
         <div class="buttons">
-            <a target="_blank" href="MohamedAli CV.pdf" class="btn btn--download btn-dark">View My CV</a>
-            <a target="_blank" href="" class="btn btn-dark">Contact Me</a>
+            <div class="box-left"><a target="_blank" href="MohamedAli CV.pdf" class="btn btn--download btn-dark">View My CV</a></div>
+            <div class="box-right"><a target="_blank" href="" class="btn btn-dark">Contact Me</a></div>
         </div>
     </div>
     <hr style="color: white; width: 50%;opacity: 1;" class="container" id="aboutme">
@@ -80,7 +88,7 @@
                 <li>Leadership</li>
             </ul>
             </div>
-            <div class="btn btn-dark" id="btn-readMore">Read More</div>
+            <div class="box-left"><div class="btn btn-dark" id="btn-readMore">Read More</div></div>
             <div class="btn btn-dark" id="btn-readLess" style="display: none;">Read less</div>
         </div>
         </div>
@@ -109,19 +117,27 @@
     <h1 class="text-white text-center box" style="margin-top: 20px;">Contact Me</h1>
 
     <div class="container  contact">
+        <div class="box">
         <div class="form-floating mb-3">
             <input id="email" type="email" class="form-control box" id="floatingInput" placeholder="name@example.com">
             <label for="floatingInput">Email address</label>
         </div>
+        </div>
+        <div class="box">
         <div class="form-floating mb-3">
             <input id="username" type="text" class="form-control box" id="floatingInput" placeholder="Username">
             <label for="floatingPassword">Username</label>
         </div>
+        </div>
+        <div class="box">
         <div class="form-floating">
             <textarea id="text-area"class="form-control box" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
             <label for="floatingTextarea" class="">Comments</label>
         </div>
+        </div>
+        <div class="box-left">
         <div class="btn btn-dark mt-3 btn-send" id="btn-send">Send</div>
+        </div>
     </div>
 
 

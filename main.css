@@ -71,6 +71,9 @@ nav .navbar-brand::first-letter{
     background-repeat: no-repeat;
     border: 3px solid white;
 }
+.main-sec .icons{
+    display: flex;
+}
 .main-sec .icons a{
     border-radius: 50%;
     border: none;
@@ -85,6 +88,9 @@ nav .navbar-brand::first-letter{
     transition: 0.4s ease-in-out;
     color: white;
 }
+.main-sec .buttons{
+    display: flex;
+}
 .main-sec .buttons a:hover{
     transform: scale(1.1);
 }
@@ -94,7 +100,7 @@ nav .navbar-brand::first-letter{
 }
 .box{
     opacity: 0;
-    transform: translateY(60px);
+    transform: translateY(30px);
     transition: opacity 1.2s ease-out, transform 1.2s ease-out;
 }
 .box-left.show {
