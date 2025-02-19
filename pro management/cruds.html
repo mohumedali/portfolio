@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cruds</title>
+    <link rel="stylesheet" href="cruds.css">
+</head>
+<body>
+<div class="cruds">
+    <div class="head">
+        <h2>CRUDS</h2>
+        <p>PRODUCT MANAGEMENT SYSTEM</p>
+    </div>
+    <div class="inputs">
+        <input onkeyup="getTotal()" type="text" id="title" placeholder="title">
+        <input onkeyup="getTotal()" class="money" id="price" type="number" placeholder="price">
+        <input onkeyup="getTotal()" class="money" id="taxes" type="number" placeholder="taxes">
+        <input onkeyup="getTotal()" class="money" id="ads" type="number" placeholder="ads">
+        <input onkeyup="getTotal()" class="money" id="discount" type="number" placeholder="discount">
+        <small id="total"></small>
+    </div>
+    <input class="count" id="count" type="number" placeholder="count">
+    <input class="category" id="category" type="text" placeholder="category">
+    <button id="create" type="submit" class="create">create</button>
+    <div class="outputs">
+        <div class="searchbar">
+            <input onkeyup="searchdata(this.value)" id="search"  type="text" placeholder="Search">
+            <button id="searchbytit" onclick="getsearchmood(this.id)" class="btntitle">Search By Title</button>
+            <button id="searchbycat" onclick="getsearchmood(this.id)" class="btncategory">Search By Categories</button>
+            <div id="deleteall"></div>
+        </div>
+        <table>
+            <tr>
+                <th>id</th>
+                <th>title</th>
+                <th>price</th>
+                <th>taxes</th>
+                <th>ads</th>
+                <th>discount</th>
+                <th>total</th>
+                <th>category</th>
+                <th>update</th>
+                <th>delete</th>
+            </tr>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+
+<script src="cruds2.js"></script>
+</body>
+</html>

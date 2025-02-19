@@ -20,7 +20,7 @@
             <ul class="navbar-nav">
                 <li class="nav-item box"><a href="#main" class="nav-link active">Home</a></li>
                 <li class="nav-item box"><a href="#aboutme" class="nav-link">About Me</a></li>
-                <li class="nav-item box"><a href="" class="nav-link">Projects</a></li>
+                <li class="nav-item box"><a href="#project" class="nav-link">Projects</a></li>
                 <li class="nav-item box"><a href="" class="nav-link">Contact Me</a></li>
             </ul>
             </div>
@@ -62,7 +62,7 @@
         <div class="about-content">
         <div class="main-img"></div>
         <div class="skills">
-            <h3 class="text-white">Technical Skills</h3>
+            <h3 class="text-white mt-2">Technical Skills</h3>
             <ul>
                 <li><span>Markup Languages : </span> Html, Css, Scss.</li>
                 <li><span>Programming Languages : </span> Python, Java, C++, Javascript, SQL</li>
@@ -70,21 +70,40 @@
                 <li><span>Version Control : </span>Git/GitHub</li>
                 <li><span>Software Development Concepts : </span>OOP, Data structure,Database, Algorithm</li>
             </ul>
-            <div class="btn btn-dark">Read More</div>
+            <div class="hide box" id="soft-skill">
+            <h3 class="text-white">Soft Skills</h3>
+            <ul>
+                <li>Communication</li>
+                <li>Critical thinking</li>
+                <li>Problem Solving</li>
+                <li>Team Work</li>
+                <li>Leadership</li>
+            </ul>
+            </div>
+            <div class="btn btn-dark" id="btn-readMore">Read More</div>
+            <div class="btn btn-dark" id="btn-readLess" style="display: none;">Read less</div>
         </div>
         </div>
 
 
     </section>
     <hr style="color: white; width: 50%;opacity: 1;" class="container" id="project">
+    <h1 class="text-white text-center">My projects</h1>
     <section class="projects"> 
-        <button class="ecomm-pro" id="btn-ecomm">
-            <div>
+        <a href="ecommerce project/Home.html" target="_blank">
+            <div class="ecomm-pro">
                 <img src="ecommerce project/hero4.png" alt="">
                 <h2>E-commerce Project</h2>
                 <p>fully responsive website using Html, Css, Javascript </p>
             </div>
-        </button>
+        </a>
+        <a href="pro management/cruds.html" target="_blank">
+            <div class="ecomm-pro">
+                <img src="image.png" alt="">
+                <h2>Mroduct Management Project</h2>
+                <p>website using Html, Css, Javascript </p>
+            </div>
+        </a>
     </section>
 
 

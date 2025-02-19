@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #222;
+    color: #fff;
+    font-family: system-ui;
+}
+.cruds{
+    width: 80%;
+    margin: auto;
+}
+.head{
+    text-align: center;
+    margin: 10px 0;
+}
+input{
+    color: white;
+}
+input:focus{
+    transform: scale(1.1);
+}
+#title{
+    width: 80%;
+    display: block;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #111;
+    margin: 10px 0;
+}
+.money{
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+}
+.count ,.category{
+    display: block;
+    width: 80%;
+    display: block;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    margin: 10px 0;
+}
+.create{
+    display: block;
+    width: 80%;
+    display: block;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color:indigo;
+    margin: 10px 0;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    transition: 0.5s;
+}
+.create:hover{
+    background-color:rgb(86, 13, 138);
+    letter-spacing: 1px;
+}
+#total{
+    background-color: rgb(135, 2, 11);
+    padding: 5px 5px;
+    border-radius: 4px;
+}
+#total::before{
+    content: 'Total : ';
+}
+.outputs input{
+    width: 80%;
+    display: block;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #111;
+    margin: 10px 0;
+}
+.btntitle , .btncategory{
+    width: 40%;
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color:indigo;
+    transition: 0.5s;
+}
+.btntitle:hover , .btncategory:hover{
+    background-color:rgb(86, 13, 138);
+    letter-spacing: 1px;
+}
+table{
+    width: 80%;
+    text-align: center;
+    margin: 10px 0;
+}
+table th{
+    text-transform: uppercase;
+}
+td,th{
+    padding: 5px;
+}
+#update,#delete{
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color:indigo;
+    transition: 0.5s;
+}
+#update:hover , #delete:hover{
+    background-color:rgb(86, 13, 138);
+    letter-spacing: 1px;
+}
+#deleteall button{
+    display: block;
+    width: 80%;
+    display: block;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color:indigo;
+    margin: 10px 0;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    transition: 0.5s;
+}
+#deleteall button:hover{
+    background-color:rgb(86, 13, 138);
+    letter-spacing: 1px;
+}

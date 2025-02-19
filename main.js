@@ -27,14 +27,16 @@ arrow.onclick=function(){
         top:'0'
     })
 }
-let tech=document.getElementById('tech-skills')
-let btn_read=document.getElementById('btn-read')
-let soft=document.getElementById('soft-skills')
-btn_read.onclick=function(){
-    tech.style.display='none'
-    soft.style.display='block'
+let soft_skill=document.getElementById('soft-skill')
+let btn_readMore=document.getElementById('btn-readMore');
+let btn_readLess=document.getElementById('btn-readLess');
+btn_readMore.onclick=function(){
+    soft_skill.style.display='block';
+    btn_readMore.style.display='none';
+    btn_readLess.style.display='block'
 }
-let btnEcom=document.getElementById('btn-ecomm');
-btnEcom.onclick=function(){
-    window.location.href='Home.html';
+btn_readLess.onclick=function(){
+    soft_skill.style.display='none';
+    btn_readMore.style.display='block';
+    btn_readLess.style.display='none';
 }

@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .body{
     background-color: #44174e;
     height: 2000px;
@@ -110,9 +111,14 @@ nav .navbar-brand::first-letter{
     color: white;
     font-size: 18px;
 }
+.skills{
+    margin-top: 30px;
+}
 .skills li{
     color: rgb(186, 186, 186);
     font-weight: 700;
+    line-height: 35px;
+
 }
 .skills .btn{
     transition: 0.4s ease-in-out;
@@ -122,8 +128,10 @@ nav .navbar-brand::first-letter{
 .skills .btn:hover{
     transform: scale(1.1);
 }
-.skills .flip-card{
+.hide{
     display: none;
+    transition: all 1s ease-in-out;
+    line-height: 35px;
 }
 .projects{
     display: flex;
@@ -131,25 +139,40 @@ nav .navbar-brand::first-letter{
     justify-content: space-evenly;
     align-items: center;
 }
+.projects a{
+    text-decoration: none;
+}
 .projects .ecomm-pro {
-    width: 300px;
+    width: 250px;
     height: 350px;
+    box-shadow: 1px 1px 3px gray;
+    border-radius: 20px;
+    border: 1px solid #eee;
     background-color: transparent;
-    border: 1px solid white;
-    border-radius: 10px;
-    transition: all 0.5s ease-in-out;
+    position: relative;
+    transition: 0.4s ease;
+    margin-top: 50px;
     color: white;
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
 }
 .projects .ecomm-pro p{
     color: rgb(186, 186, 186);
+    text-align: center;
+}
+.projects .ecomm-pro h2{
+    text-align: center;
 }
 .projects .ecomm-pro:hover{
     transform: scale(1.1);
 }
 .projects .ecomm-pro img{
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px black;
-    margin-bottom: 15px;
+    width: 225px;
+    height: 160px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+
 }
