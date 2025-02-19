@@ -69,3 +69,14 @@ btn_readLess.onclick=function(){
     btn_readMore.style.display='block';
     btn_readLess.style.display='none';
 }
+let username=document.getElementById('username');
+let email=document.getElementById('email');
+let textarea=document.getElementById('text-area');
+let btnsend=document.getElementById('btn-send');
+btnsend.onclick=function(){
+    username.value='';
+    email.value='';
+    textarea.value='';
+}
+
+
