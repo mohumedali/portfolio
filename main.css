@@ -6,9 +6,7 @@
 
 .body{
     background-color: #44174e;
-    height: 2100px;
     scroll-behavior: smooth;
-    position: relative;
 }
 .arrow{
     position: fixed;
@@ -184,9 +182,7 @@ nav .navbar-brand::first-letter{
     border-radius: 20px;
     border: 1px solid #eee;
     background-color: transparent;
-    position: relative;
     transition: 0.4s ease;
-    margin-top: 50px;
     color: white;
     display: flex;
     justify-content: center;
@@ -217,12 +213,10 @@ nav .navbar-brand::first-letter{
 }
 .btn-send{
     width: 250px;
+    margin-bottom: 15px;
 }
-footer {
+footer{
     font-size: 20px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
     color: white;
     background-color: #212529;
     padding: 5px;
@@ -234,4 +228,5 @@ footer a{
     font-weight: bold;
     color:#9606b6;
 }
+
 
