@@ -228,5 +228,11 @@ footer a{
     font-weight: bold;
     color:#9606b6;
 }
+@media (max-width:500px) {
+    footer{
+        font-size: 16px;
+    }
+    
+}
 
 
