@@ -6,7 +6,7 @@
 
 .body{
     background-color: #44174e;
-    height: 2000px;
+    height: 2100px;
     scroll-behavior: smooth;
     position: relative;
 }
@@ -15,6 +15,7 @@
     bottom: 10px;
     right: 20px;;
     opacity: 0;
+    z-index: 100;
 }
 .main-sec p, .main-sec h2, .main-sec h3{
     color: white;
@@ -216,5 +217,21 @@ nav .navbar-brand::first-letter{
 }
 .btn-send{
     width: 250px;
+}
+footer {
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background-color: #212529;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+footer a{
+    text-decoration: none;
+    font-weight: bold;
+    color:#9606b6;
 }
 
