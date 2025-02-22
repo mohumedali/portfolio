@@ -1,3 +1,10 @@
+:root{
+    --backgorund-color:#111528;
+    --primary-text:#Eee;
+    --secondary-text:#c0c0c0;
+    --secondary-text-lightmode:#545454;
+    --footer-background:#212529;
+}
 *{
     margin: 0;
     padding: 0;
@@ -5,8 +12,14 @@
 }
 
 .body{
-    background-color: #44174e;
+    background-color: var(--backgorund-color);
     scroll-behavior: smooth;
+}
+.lightmode{
+    --backgorund-color:#eee;
+    --primary-text:#111528;
+    --secondary-text:#c0c0c0;
+    transition: 1.5s;
 }
 .arrow{
     position: fixed;
@@ -15,8 +28,8 @@
     opacity: 0;
     z-index: 100;
 }
-.main-sec p, .main-sec h2, .main-sec h3{
-    color: white;
+body h1,body h3{
+    color: var(--primary-text);
 }
 .main-sec h3{
     width: 20ch;
@@ -44,18 +57,22 @@ nav{
 }
 nav li a:hover{
     transform: scale(1.1);
-    color: #eee;
+    color: white;
 }
 nav .navbar-brand::first-letter{
-    color: #9606b6;
+    color: white;
     font-weight: bold;
+}
+#btn-dark{
+    display: none;
+
 }
 .main-sec{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color:black;
+    color:var(--primary-text);
     text-align: center;
     margin-top: 20px;
 }
@@ -68,7 +85,8 @@ nav .navbar-brand::first-letter{
     background-size: cover;
     margin-bottom: 10px;
     background-repeat: no-repeat;
-    border: 3px solid white;
+    border: 3px solid var(--primary-text);
+    box-shadow: 1px 1px 3px var(--primary-text);
 }
 .main-sec .icons{
     display: flex;
@@ -100,7 +118,8 @@ nav .navbar-brand::first-letter{
 .box{
     opacity: 0;
     transform: translateY(30px);
-    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+    transition: opacity 2s ease-out, transform 1.2s ease-out;
+    transition-delay: 0.2s;
 }
 .box-left.show {
     opacity: 1;
@@ -109,7 +128,9 @@ nav .navbar-brand::first-letter{
 .box-left{
     opacity: 0;
     transform: translatex(-30px);
-    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+    transition: opacity 2s ease-out, transform 1.2s ease-out;
+    transition-delay: 0.2s;
+
 }
 .box-right.show {
     opacity: 1;
@@ -118,7 +139,9 @@ nav .navbar-brand::first-letter{
 .box-right{
     opacity: 0;
     transform: translatex(30px);
-    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+    transition: opacity 2s ease-out, transform 1.2s ease-out;
+    transition-delay: 0.2s;
+
 }
 .box-top.show {
     opacity: 1;
@@ -127,10 +150,10 @@ nav .navbar-brand::first-letter{
 .box-top{
     opacity: 0;
     transform: translateY(-35px);
-    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+    transition: opacity 2s ease-out, transform 1.2s ease-out;
 }
 .about-sec{
-    margin-top: 20px;
+    margin-top: 120px;
 }
 .about-content{
     display: flex;
@@ -140,21 +163,21 @@ nav .navbar-brand::first-letter{
 }
 .skills li span{
     font-weight: bold;
-    color: white;
+    color: var(--primary-text);
     font-size: 18px;
 }
 .skills{
-    margin-top: 30px;
+    margin-top: 20px;
 }
 .skills li{
-    color: rgb(186, 186, 186);
+    color: var(--secondary-text-lightmode);
     font-weight: 700;
     line-height: 35px;
 
 }
 .skills .btn{
     transition: 0.4s ease-in-out;
-    color: white;
+    color:white;
     font-size: 18px;
 }
 .skills .btn:hover{
@@ -178,12 +201,12 @@ nav .navbar-brand::first-letter{
 .projects .ecomm-pro {
     width: 250px;
     height: 350px;
-    box-shadow: 1px 1px 3px gray;
+    box-shadow: 1px 1px 3px var(--primary-text);
     border-radius: 20px;
-    border: 1px solid #eee;
+    border: 1px solid var(--primary-text);
     background-color: transparent;
     transition: 0.4s ease;
-    color: white;
+    color: var(--primary-text);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -192,7 +215,7 @@ nav .navbar-brand::first-letter{
     margin-bottom: 20px;
 }
 .projects .ecomm-pro p{
-    color: rgb(186, 186, 186);
+    color: var(--primary-text);
     text-align: center;
 }
 .projects .ecomm-pro h2{
@@ -209,24 +232,29 @@ nav .navbar-brand::first-letter{
 
 }
 .contact{
-    margin-top: 20px;
+    margin-top: 120px;
 }
-.btn-send{
+.contact button{
     width: 250px;
     margin-bottom: 15px;
+    transition: 0.4s ease-in-out;
+}
+.btn-send:hover{
+    transform: scale(1.1);
 }
 footer{
     font-size: 20px;
-    color: white;
+    color:white;
     background-color: #212529;
     padding: 5px;
     display: flex;
     justify-content: center;
+    
 }
 footer a{
     text-decoration: none;
     font-weight: bold;
-    color:#9606b6;
+    color:white;
 }
 @media (min-width:401px) and (max-width:700px) {
     footer{

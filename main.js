@@ -79,4 +79,18 @@ btnsend.onclick=function(){
     textarea.value='';
 }
 
+const body = document.querySelector('body');
+let btn_light= document.getElementById('btn-light')
+let btn_dark= document.getElementById('btn-dark')
+btn_light.onclick=function(){
+    body.classList.add('lightmode');
+    btn_dark.style.display='block';
+    btn_light.style.display='none';
+    
+}
+btn_dark.onclick=function(){
+    body.classList.remove('lightmode');
+    btn_light.style.display='block';
+    btn_dark.style.display='none';
+}
 

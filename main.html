@@ -22,6 +22,8 @@
                 <li class="nav-item box-top"><a href="#aboutme" class="nav-link">About Me</a></li>
                 <li class="nav-item box-top"><a href="#project" class="nav-link">Projects</a></li>
                 <li class="nav-item box-top"><a href="#Contact" class="nav-link">Contact Me</a></li>
+                <li class="nav-item box-top"><button class="btn btn-dark" id="btn-light"><i class="bi bi-sun-fill"></i></button></li>
+                <li class="nav-item box-top"><button class="btn btn-dark" id="btn-dark"><i class="bi bi-moon-fill"></i></button></li>
             </ul>
             </div>
         </div>
@@ -64,13 +66,12 @@
             <div class="box-right"><a target="_blank" href="" class="btn btn-dark">Contact Me</a></div>
         </div>
     </div>
-    <hr style="color: white; width: 50%;opacity: 1;" class="container" id="aboutme">
     <section class="container about-sec" >
-        <h1 class="text-white text-center box">About Me</h1>
+        <h1 class="text-center box">About Me</h1>
         <div class="about-content">
         <div class="main-img box-left" ></div>
         <div class="skills box-right">
-            <h3 class="text-white mt-2">Technical Skills</h3>
+            <h3 class="mt-2">Technical Skills</h3>
             <ul>
                 <li><span>Markup Languages : </span> Html, Css, Scss.</li>
                 <li><span>Programming Languages : </span> Python, Java, C++, Javascript, SQL</li>
@@ -79,7 +80,7 @@
                 <li><span>Software Development Concepts : </span>OOP, Data structure,Database, Algorithm</li>
             </ul>
             <div class="hide box" id="soft-skill">
-            <h3 class="text-white">Soft Skills</h3>
+            <h3>Soft Skills</h3>
             <ul>
                 <li>Communication</li>
                 <li>Critical thinking</li>
@@ -95,9 +96,9 @@
 
 
     </section>
-    <hr style="color: white; width: 50%;opacity: 1;" class="container" id="project">
-    <h1 class="text-white text-center box" style="margin-top: 20px;" >My projects</h1>
-    <section class="projects"> 
+    <section> 
+        <h1 class="text-center box" style="margin-top: 120px;" >My projects</h1>
+        <div class="projects">
         <a href="ecommerce project/Home.html" target="_blank" class="box-left">
             <div class="ecomm-pro">
                 <img src="ecommerce project/hero4.png" alt="">
@@ -112,11 +113,10 @@
                 <p>website using Html, Css, Javascript(CRUD) </p>
             </div>
         </a>
+        </div>
     </section>
-    <hr style="color: white; width: 50%;opacity: 1;" class="container" id="Contact">
-    <h1 class="text-white text-center box" style="margin-top: 20px;">Contact Me</h1>
-
     <div class="container  contact">
+        <h1 class="text-center box" style="margin-top: 20px;">Contact Me</h1>
         <div class="box">
         <div class="form-floating mb-3">
             <input id="email" type="email" class="form-control box" id="floatingInput" placeholder="name@example.com">
@@ -136,7 +136,7 @@
         </div>
         </div>
         <div class="box-left">
-        <div class="btn btn-dark mt-3 btn-send" id="btn-send">Send</div>
+        <button class="btn btn-dark mt-3 btn-send" id="btn-send">Send</button>
         </div>
     </div>
 
