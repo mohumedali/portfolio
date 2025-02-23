@@ -1,7 +1,7 @@
 :root{
     --backgorund-color:#111528;
     --primary-text:#Eee;
-    --secondary-text:#c0c0c0;
+    --secondary-text:#c1c1c1;
     --secondary-text-lightmode:#545454;
     --footer-background:#212529;
 }
@@ -18,7 +18,7 @@
 .lightmode{
     --backgorund-color:#eee;
     --primary-text:#111528;
-    --secondary-text:#c0c0c0;
+    --secondary-text:#565656;
     transition: 1.5s;
 }
 .arrow{
@@ -30,6 +30,7 @@
 }
 body h1,body h3{
     color: var(--primary-text);
+    margin-bottom: 20px;
 }
 .main-sec h3{
     width: 20ch;
@@ -60,7 +61,7 @@ nav li a:hover{
     color: white;
 }
 nav .navbar-brand::first-letter{
-    color: white;
+    color: #0047b3;
     font-weight: bold;
 }
 #btn-dark{
@@ -170,9 +171,9 @@ nav .navbar-brand::first-letter{
     margin-top: 20px;
 }
 .skills li{
-    color: var(--secondary-text-lightmode);
+    color: var(--secondary-text);
     font-weight: 700;
-    line-height: 35px;
+    line-height: 45px;
 
 }
 .skills .btn{
@@ -254,7 +255,7 @@ footer{
 footer a{
     text-decoration: none;
     font-weight: bold;
-    color:white;
+    color:#0047b3;
 }
 @media (min-width:401px) and (max-width:700px) {
     footer{
